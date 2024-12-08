@@ -19,7 +19,7 @@ export default function Home() {
     <div className={classNames('container', anim.slide)}>
       <AudioPlayer
         className={style.player_container}
-        src={`${process.env.NEXT_PUBLIC_STRAPI}${audio}`}
+        src={`https://gitfcms.up.railway.app${audio}`}
         onPlay={() => console.log("onPlay")}
         showJumpControls={false}
         showDownloadProgress={false}

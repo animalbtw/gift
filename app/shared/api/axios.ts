@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const strapiInstance = axios.create({
-    baseURL: process.env.NEXT_PUBLIC_STRAPI,
+    baseURL: 'https://gitfcms.up.railway.app/',
     timeout: 1000,
 });
 
