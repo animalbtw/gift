@@ -7,7 +7,8 @@
   --accent: #FFD700;
   --text: #2F4F4F;
   --background: #292929;
-  --decorative : #D3D3D3;
+  --backgroundMain: #5f5f5f;
+  --decorative: #e4e4e4;
 }
 
 * {
@@ -25,7 +26,7 @@ body {
 }
 
 .container {
-  background-color: var(--background);
+  background-color: var(--backgroundMain);
   width: 100vw;
   height: 100vh;
   display: flex;
@@ -35,7 +36,17 @@ body {
 }
 
 .rhap_container {
-  background-color: var(--background);
+  height: 100% !important;
+  max-height: 400px;
+  background: rgba(255, 255, 255, 0.24) !important;
+  border-radius: 16px !important;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1) !important;
+  backdrop-filter: blur(6.2px) !important;
+  -webkit-backdrop-filter: blur(6.2px) !important;
+}
+
+.rhap_main {
+  flex-direction: column-reverse !important;
 }
 
 .rhap_time {
@@ -43,17 +54,40 @@ body {
 }
 
 .rhap_main-controls {
-  width: 60px !important;
-  height: 60px !important;
+  width: 120px !important;
+  height: 120px !important;
 }
 
 .rhap_button-clear {
-  width: 60px !important;
-  height: 60px !important;
+  margin: 0 !important;
+  width: 120px !important;
+  height: 120px !important;
+
+  path {
+    color: var(--decorative);
+  }
 }
 
 .iconify,
 .iconify--mdi {
-  width: 60px !important;
-  height: 60px !important;
+  width: 120px !important;
+  height: 120px !important;
+}
+
+.rhap_progress-bar {
+  position: relative;
+}
+
+.rhap_progress-indicator {
+  background-color: var(--decorative) !important;
+  position: absolute !important;
+  background-color: var(--primary) !important;
+  width: 20px !important;
+  height: 20px !important;
+  border-radius: 50% !important;
+  z-index: 1000 !important;
+}
+
+.rhap_progress-filled {
+  background-color: var(--primary) !important;
 }
