@@ -3,7 +3,30 @@ import strapiInstance from "./axios"
 export const getAudio = async () => {
     try {
         return await strapiInstance.get('api/audio?populate=*')
-    } catch(e) {
+    } catch (e) {
+        console.log(`err: >> ${e}`)
+        return null
+    }
+}
+
+
+export const getCounter = async () => {
+    try {
+        return await strapiInstance.get('api/counter')
+    } catch (e) {
+        console.log(`err: >> ${e}`)
+        return null
+    }
+}
+
+export const updateCounter = async (streaming: number) => {
+    try {
+        return await strapiInstance.put('api/counter', {
+            "data": {
+                "streaming": 1
+            }
+        })
+    } catch (e) {
         console.log(`err: >> ${e}`)
         return null
     }

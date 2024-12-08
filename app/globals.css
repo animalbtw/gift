@@ -34,6 +34,26 @@ body {
   flex-direction: column;
 }
 
+.rhap_container {
+  background-color: var(--background);
+}
+
 .rhap_time {
   display: none;
+}
+
+.rhap_main-controls {
+  width: 60px !important;
+  height: 60px !important;
+}
+
+.rhap_button-clear {
+  width: 60px !important;
+  height: 60px !important;
+}
+
+.iconify,
+.iconify--mdi {
+  width: 60px !important;
+  height: 60px !important;
 }
