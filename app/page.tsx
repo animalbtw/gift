@@ -1,23 +1,30 @@
 'use client'
 
+import { useEffect, useState } from "react";
 import classNames from "classnames";
 import AudioPlayer from 'react-h5-audio-player';
+import { getAudio } from "./shared/api/strapi";
+import style from './assets/styles/page.module.css'
 import anim from './assets/styles/animations.module.css'
 
-const mp3 = 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3'
 
 export default function Home() {
+  const [audio, setAudio] = useState('')
+
+  useEffect(() => {
+    getAudio().then(res => setAudio(res?.data.data.file.url))
+  }, [])
+
   return (
     <div className={classNames('container', anim.slide)}>
       <AudioPlayer
-        autoPlay
-        src={mp3}
+        className={style.player_container}
+        src={`${process.env.NEXT_PUBLIC_STRAPI}${audio}`}
         onPlay={() => console.log("onPlay")}
         showJumpControls={false}
         showDownloadProgress={false}
         customAdditionalControls={[]}
         customVolumeControls={[]}
-      // other props here
       />
     </div>
   );
