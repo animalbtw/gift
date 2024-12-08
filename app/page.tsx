@@ -13,20 +13,17 @@ export default function Home() {
   const [streamings, setStreamings] = useState(0)
 
   useEffect(() => {
-    getAudio().then(res => {
-      console.log(res)
-      setAudio(res?.data.data.file.name)
-    })
+    getAudio().then(res => setAudio(res?.data.data.file.url))
     getCounter().then(res => setStreamings(res?.data.data.streaming))
   }, [])
 
-
+  
 
   return (
     <div className={classNames('container', anim.slide)}>
       <AudioPlayer
         className={style.player_container}
-        src={`https://gitfcms.up.railway.app/uploads/${audio}`}
+        src={`https://gitfcms.up.railway.app${audio}`}
         onPlay={() => updateCounter(streamings + 1)}
         showJumpControls={false}
         showDownloadProgress={false}
