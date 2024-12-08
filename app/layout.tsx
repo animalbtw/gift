@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
+import 'react-h5-audio-player/lib/styles.css';
 
 const geistSans = localFont({
   src: "./assets/fonts/GeistVF.woff",
