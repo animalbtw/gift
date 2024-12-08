@@ -23,7 +23,7 @@ export const updateCounter = async (streaming: number) => {
     try {
         return await strapiInstance.put('api/counter', {
             "data": {
-                "streaming": 1
+                streaming
             }
         })
     } catch (e) {
