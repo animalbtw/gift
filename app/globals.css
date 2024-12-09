@@ -287,7 +287,7 @@ body {
   }
 
   25% {
-    -webkit-transform: rotateX(0deg) rotateY(-90deg);
+    -webkit-transform: rotateX(0deg) rotateY(-45deg);
   }
 
   50% {
@@ -295,7 +295,7 @@ body {
   }
 
   75% {
-    -webkit-transform: rotateX(0deg) rotateY(90deg);
+    -webkit-transform: rotateX(0deg) rotateY(45deg);
   }
 
   99.99999% {
@@ -338,7 +338,7 @@ body {
   }
 
   25% {
-    -webkit-transform: rotateX(0deg) rotateY(-90deg) translateZ(-2px);
+    -webkit-transform: rotateX(0deg) rotateY(-45deg) translateZ(-2px);
   }
 
   50% {
@@ -346,7 +346,7 @@ body {
   }
 
   75% {
-    -webkit-transform: rotateX(0deg) rotateY(90deg) translateZ(-2px);
+    -webkit-transform: rotateX(0deg) rotateY(45) translateZ(-2px);
   }
 
   99.99999% {
