@@ -159,8 +159,7 @@ body {
   top: 0;
   left: 0;
   /* -webkit-animation: 10s tree-rotate linear infinite; */
-  -webkit-transform: rotateY(30deg);
-  -webkit-transform: rotateX(-5deg);
+  -webkit-transform: rotateX(-5deg) rotateY(15deg);
   -webkit-animation-delay: -150ms;
 
 }
