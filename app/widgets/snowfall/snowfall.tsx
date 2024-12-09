@@ -1,5 +1,3 @@
-import style from './snowfall.module.css'
-
 export const Snowfall = () => {
 	return (
 		<div className="container-tree">

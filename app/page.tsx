@@ -1,12 +1,10 @@
 'use client'
 
-import Image from "next/image";
 import { useEffect, useState } from "react";
 import classNames from "classnames";
 import AudioPlayer from 'react-h5-audio-player';
 import { getAudio, getCounter, updateCounter } from "./shared/api/strapi";
 import { Snowfall } from "./widgets/snowfall";
-import bg from '../public/bg.png'
 import style from './assets/styles/page.module.css'
 import anim from './assets/styles/animations.module.css'
 
