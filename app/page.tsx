@@ -22,10 +22,7 @@ export default function Home() {
 
   return (
     <div className={classNames('container', anim.slide)}>
-      <div className={style.background}>
-        <Image src={bg} alt="bg" layout='fill' />
-        <Snowfall />
-      </div>
+      <div className={style.background} />
       <AudioPlayer
         className={style.player_container}
         src={`https://gitfcms.up.railway.app${audio}`}
@@ -35,6 +32,7 @@ export default function Home() {
         customAdditionalControls={[]}
         customVolumeControls={[]}
       />
+      <Snowfall />
     </div>
   );
 }
