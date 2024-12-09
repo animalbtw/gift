@@ -160,6 +160,7 @@ body {
   left: 0;
   /* -webkit-animation: 10s tree-rotate linear infinite; */
   transform: rotateY(30deg);
+  transform: rotateX(-5deg);
   -webkit-animation-delay: -150ms;
 
 }
