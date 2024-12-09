@@ -146,6 +146,7 @@ body {
   height: var(--tree-height);
   -webkit-transform-style: preserve-3d;
   -webkit-transform: rotateX(var(--tree-rotate));
+  -webkit-animation-delay: -150ms;
 }
 
 .trunk,
@@ -158,6 +159,8 @@ body {
   top: 0;
   left: 0;
   -webkit-animation: 10s tree-rotate linear infinite;
+  -webkit-animation-delay: -150ms;
+
 }
 
 .trunk div {
@@ -319,6 +322,8 @@ body {
   -webkit-transform: rotateX(90deg) translateX(-50%);
   animation: 10s shadow-rotate linear infinite;
   -webkit-animation: 10s shadow-rotate linear infinite;
+  -webkit-animation-delay: -150ms;
+
 }
 
 @keyframes shadow-rotate {
@@ -335,6 +340,8 @@ body {
   -webkit-transform: translateZ(-2px);
   animation: 10s star-1-rotate linear infinite;
   -webkit-animation: 10s star-1-rotate linear infinite;
+  -webkit-animation-delay: -150ms;
+
 }
 
 @keyframes star-1-rotate {
@@ -363,25 +370,31 @@ body {
   -webkit-transform: translateZ(-1px);
   animation: 10s star-1-rotate linear infinite;
   -webkit-animation: 10s star-1-rotate linear infinite;
+  -webkit-animation-delay: -150ms;
 }
 
 .star-3 {
   -webkit-transform: translateZ(0px);
   animation: 10s star-1-rotate linear infinite;
   -webkit-animation: 10s star-1-rotate linear infinite;
+  -webkit-animation-delay: -150ms;
+
 }
 
 .star-4 {
   -webkit-transform: translateZ(1px);
   animation: 10s star-1-rotate linear infinite;
   -webkit-animation: 10s star-1-rotate linear infinite;
-}
+  -webkit-animation-delay: -150ms;
 
+}
 
 .star-5 {
   -webkit-transform: translateZ(2px);
   animation: 10s star-1-rotate linear infinite;
   -webkit-animation: 10s star-1-rotate linear infinite;
+  -webkit-animation-delay: -150ms;
+
 }
 
 .star,
@@ -459,16 +472,22 @@ body {
 .snow-y-1:before {
   animation: 8s snow-y-1 ease-in infinite, 8s snow-y-0 linear infinite;
   -webkit-animation: 8s snow-y-1 ease-in infinite, 8s snow-y-0 linear infinite;
+  -webkit-animation-delay: -150ms;
+
 }
 
 .snow-y-2:before {
   animation: 6s snow-y-2 ease-in infinite, 6s snow-y-0 linear infinite;
   -webkit-animation: 6s snow-y-2 ease-in infinite, 6s snow-y-0 linear infinite;
+  -webkit-animation-delay: -150ms;
+
 }
 
 .snow-y-3:before {
   animation: 4s snow-y-2 ease-in infinite, 4s snow-y-0 linear infinite;
   -webkit-animation: 4s snow-y-2 ease-in infinite, 4s snow-y-0 linear infinite;
+  -webkit-animation-delay: -150ms;
+
 }
 
 .snow-1 {
@@ -478,6 +497,8 @@ body {
   left: calc(50% - 10px);
   animation: 1s snow-x linear infinite;
   -webkit-animation: 1s snow-x linear infinite;
+  -webkit-animation-delay: -150ms;
+
 }
 
 .snow-2 {
@@ -487,6 +508,8 @@ body {
   left: calc(50% - 30px);
   animation: 0.8s snow-x linear infinite 0.1s;
   -webkit-animation: 0.8s snow-x linear infinite 0.1s;
+  -webkit-animation-delay: -150ms;
+
 }
 
 .snow-3 {
@@ -496,6 +519,8 @@ body {
   left: calc(50% + 60px);
   animation: 0.6s snow-x linear infinite 0.8s;
   -webkit-animation: 0.6s snow-x linear infinite 0.8s;
+  -webkit-animation-delay: -150ms;
+
 }
 
 .snow-4 {
@@ -505,6 +530,8 @@ body {
   left: calc(50% + 50px);
   animation: 0.5s snow-x linear infinite 0.5s;
   -webkit-animation: 0.5s snow-x linear infinite 0.5s;
+  -webkit-animation-delay: -150ms;
+
 }
 
 .snow-5 {
@@ -514,6 +541,8 @@ body {
   left: calc(50% - 50px);
   animation: 0.5s snow-x linear infinite 0.5s;
   -webkit-animation: 0.5s snow-x linear infinite 0.5s;
+  -webkit-animation-delay: -150ms;
+
 }
 
 .snow-6 {
@@ -523,6 +552,8 @@ body {
   left: calc(50% - 120px);
   animation: 0.8s snow-x linear infinite 0.5s;
   -webkit-animation: 0.8s snow-x linear infinite 0.5s;
+  -webkit-animation-delay: -150ms;
+
 }
 
 .snow-7 {
@@ -532,6 +563,8 @@ body {
   left: calc(50% + 75px);
   animation: 1s snow-x linear infinite 0.6s;
   -webkit-animation: 1s snow-x linear infinite 0.6s;
+  -webkit-animation-delay: -150ms;
+
 }
 
 .snow-8 {
@@ -541,6 +574,8 @@ body {
   left: calc(50% - 30px);
   animation: 1s snow-x linear infinite 0.8s;
   -webkit-animation: 1s snow-x linear infinite 0.8s;
+  -webkit-animation-delay: -150ms;
+
 }
 
 .snow-9 {
@@ -550,6 +585,8 @@ body {
   left: calc(50% - 30px);
   animation: 1s snow-x linear infinite 0.8s;
   -webkit-animation: 1s snow-x linear infinite 0.8s;
+  -webkit-animation-delay: -150ms;
+
 }
 
 .snow-10 {
@@ -559,6 +596,8 @@ body {
   left: calc(50% - 100px);
   animation: 1s snow-x linear infinite 0.8s;
   -webkit-animation: 1s snow-x linear infinite 0.8s;
+  -webkit-animation-delay: -150ms;
+
 }
 
 @keyframes snow-x {
