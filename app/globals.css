@@ -156,8 +156,6 @@ body {
   height: 100%;
   top: 0;
   left: 0;
-  animation: 10s tree-rotate linear infinite;
-  -webkit-animation: 10s tree-rotate linear infinite;
 }
 
 .trunk div {
@@ -300,8 +298,6 @@ body {
   bottom: calc(var(--leaves-bottom-width) * -1);
   left: calc(50% - var(--leaves-bottom-width));
   -webkit-transform: rotateX(90deg) translateX(-50%);
-  animation: 10s shadow-rotate linear infinite;
-  -webkit-animation: 10s shadow-rotate linear infinite;
 }
 
 @keyframes shadow-rotate {
@@ -316,8 +312,6 @@ body {
 
 .star-1 {
   -webkit-transform: translateZ(-2px);
-  animation: 10s star-1-rotate linear infinite;
-  -webkit-animation: 10s star-1-rotate linear infinite;
 }
 
 @keyframes star-1-rotate {
@@ -332,8 +326,6 @@ body {
 
 .star-2 {
   -webkit-transform: translateZ(-1px);
-  animation: 10s star-2-rotate linear infinite;
-  -webkit-animation: 10s star-2-rotate linear infinite;
 }
 
 @keyframes star-2-rotate {
@@ -348,8 +340,6 @@ body {
 
 .star-3 {
   -webkit-transform: translateZ(0px);
-  animation: 10s star-3-rotate linear infinite;
-  -webkit-animation: 10s star-3-rotate linear infinite;
 }
 
 @keyframes star-3-rotate {
@@ -364,8 +354,6 @@ body {
 
 .star-4 {
   -webkit-transform: translateZ(1px);
-  animation: 10s star-4-rotate linear infinite;
-  -webkit-animation: 10s star-4-rotate linear infinite;
 }
 
 @keyframes star-4-rotate {
@@ -380,8 +368,6 @@ body {
 
 .star-5 {
   -webkit-transform: translateZ(2px);
-  animation: 10s star-5-rotate linear infinite;
-  -webkit-animation: 10s star-5-rotate linear infinite;
 }
 
 @keyframes star-5-rotate {
